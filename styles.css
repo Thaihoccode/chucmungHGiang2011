@@ -1,0 +1,74 @@
+* Đặt nền và kiểu chữ cho trang */
+body {
+    font-family: 'arial', sans-serif;
+    background-color: #fef8e4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    text-align: center;
+    border: 2px solid #00ff04;
+    padding: 20px;
+    background-color: #00ff0051;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.birthday-message {
+    font-size: 45px;
+    color: #1212f3;
+    margin-bottom: 12px;
+}
+
+.birthday-text {
+    font-size: 30px;
+    color: #ff00e6;
+    margin-bottom: 20px;
+}
+.birtday-letter {
+    font-size: 30px;
+    color: #ff00e6;
+    margin-bottom: 20px;
+}
+
+.birthday-animation img {
+    width: 200px;
+    height: auto;
+}
+
+.confetti-btn {
+    background-color: #fe00fe;
+    border: none;
+    padding: 10px 20px;
+    font-size: 18px;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+
+.confetti-btn:hover {
+    background-color: #fe00fe;
+}
+
+/* Animation for confetti pieces */
+@keyframes fall {
+    0% {
+        transform: translateY(0) rotate(0deg);
+    }
+    100% {
+        transform: translateY(100vh) rotate(360deg);
+    }
+}
+
+.confetti {
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    opacity: 0.9;
+}
